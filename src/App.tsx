@@ -1,11 +1,11 @@
 import React from 'react'
 
+import { useAuth } from './hooks/useAuth'
+
 const App: React.FC = () => {
-  return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
-  )
+  useAuth()
+
+  return <h1>Hello</h1>
 }
 
 export default App

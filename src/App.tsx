@@ -15,7 +15,7 @@ const App: React.FC = () => {
 
       {authLoading ? (
         <Backdrop open>
-          <CircularProgress color="primary" />
+          <CircularProgress color="primary" size={70} />
         </Backdrop>
       ) : (
         <AppRoutes />

@@ -3,18 +3,21 @@ import { Switch, Route } from 'react-router-dom'
 
 import Dashboard from 'dashboard/pages/Dashboard'
 import Settings from 'dashboard/pages/Settings'
+import DashboardLayout from 'dashboard/components/Layout'
 
 const DashboardRoutes = () => {
   return (
-    <Switch>
-      <Route path="/dashboard" exact>
-        <Dashboard />
-      </Route>
+    <DashboardLayout>
+      <Switch>
+        <Route path="/dashboard" exact>
+          <Dashboard />
+        </Route>
 
-      <Route path="/dashboard/settings">
-        <Settings />
-      </Route>
-    </Switch>
+        <Route path="/dashboard/settings">
+          <Settings />
+        </Route>
+      </Switch>
+    </DashboardLayout>
   )
 }
 

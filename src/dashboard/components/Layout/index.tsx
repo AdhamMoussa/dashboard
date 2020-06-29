@@ -67,7 +67,7 @@ const DashboardLayout: React.FC = ({ children }) => {
         <DashboardMenu closeDrawer={() => setDrawerOpen(false)} />
       </Drawer>
 
-      <main>{children}</main>
+      <main style={{ padding: '45px' }}>{children}</main>
     </>
   )
 }

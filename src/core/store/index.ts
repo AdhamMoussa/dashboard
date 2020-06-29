@@ -3,9 +3,11 @@ import { configureStore } from '@reduxjs/toolkit'
 import { ThunkAction, ThunkDispatch } from 'redux-thunk'
 
 import userReducer from './user'
+import jokesReducer from 'dashboard/store/jokes'
 
 export const rootReducer = combineReducers({
   user: userReducer,
+  jokes: jokesReducer,
 })
 
 export type AppState = ReturnType<typeof rootReducer>

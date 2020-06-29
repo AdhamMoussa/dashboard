@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
-import { firebaseApp } from '../firebaseApp'
+
+import { firebaseApp } from '../../firebaseApp'
 
 import { getUser } from '../store/user'
 

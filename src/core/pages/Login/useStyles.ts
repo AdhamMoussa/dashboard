@@ -9,12 +9,25 @@ export const useStyles = makeStyles({
     height: '100vh',
   },
   card: {
-    width: '450px',
+    width: '550px',
     maxWidth: '90vw',
     textAlign: 'center',
     padding: '45px',
   },
+  title: {
+    marginBottom: '45px',
+    textAlign: 'center',
+  },
+  form: {
+    textAlign: 'left',
+  },
   formRow: {
     marginBottom: '28px',
+  },
+  errorMsg: {
+    height: '16px',
+  },
+  btn: {
+    textAlign: 'center',
   },
 })

@@ -1,6 +1,9 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
-import { User } from 'firebase'
+type User = {
+  name: string
+  email: string
+}
 
 type UserState = {
   data: User | null
